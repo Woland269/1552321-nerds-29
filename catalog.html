@@ -24,7 +24,7 @@
     <li><a href="blank.html">Контакты</a></li>
     </ul>
   <div class="user-navigation">
-      <a class="login-link" href="login.html">Корзина</a>
+      <a class="login-basket" href="login.html">Корзина</a>
 </div>
 </div>
 </div>
@@ -212,7 +212,7 @@
 <h3>NЁRDS DESIGN STUDIO</h3>
 <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 <a class="contacts-phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-<button class="map-button" type="button">Напишите нам</button>
+<a class="login-link" href="login.html">Напишите нам</a>
  </section>
 </div>
 </section>
@@ -222,15 +222,15 @@
  <section class="footer-social">
    <ul class="social1">
  <li class="vk">
- <a class="social-button" href="#"><img src="img/Vk.svg" aria-hidden="true" width="81" height="15" alt="Логотип вконтакте"></a>
+ <a class="social-button" href="#"><img src="img/vk.svg" aria-hidden="true" width="81" height="15" alt="Логотип вконтакте"></a>
  <span class="visually-hidden">Вконтакте</span>
    </li>
 <li class="Facebook">
-<a class="social-button" href="#"><img src="img/Facebook.svg" aria-hidden="true" width="12" height="22" alt="Логотин фэйсбук"></a>
+<a class="social-button" href="#"><img src="img/facebook.svg" aria-hidden="true" width="12" height="22" alt="Логотин фэйсбук"></a>
 <span class="visually-hidden">Фейсбук</span>
 </li>
 <li class="Insta">
-<a class="social-button" href="#"><img src="img/Insta.svg" aria-hidden="true" width="21" height="21" alt="Логотип инстаграм"></a>
+<a class="social-button" href="#"><img src="img/insta.svg" aria-hidden="true" width="21" height="21" alt="Логотип инстаграм"></a>
 <span class="visually-hidden">Инстаграмм</span>
 </li>
 </ul>
@@ -239,6 +239,27 @@
 <span class="footer-span">Скидка 10% для друзей из социальных сетей.</span>
 </div>
 </section>
+
+<section class="modal modal-login">
+  <h2>Напишите нам</h2>
+   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+     <div class="wrapper">
+          <p class="modal-description-1">Ваше&nbsp;имя:</p>
+        <label class="visually-hidden" for="login-login">Логин</label>
+      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Имя Фамилия" required>
+        <p class="modal-description-2">Ваш&nbsp;email:</p>
+        <label class="visually-hidden" for="login-password">Email</label>
+      <input class="login-icon-password" id="login-password" type="login" name="password" placeholder="email@example.com" required>
+  </div>
+        <p class="modal-description-3">Текст письма:</p>
+        <textarea class="text" name="text" id="contact-text" rows="5" cols="250" placeholder="В свободной форме" required="" style="margin: 0px; height: 94px; width: 730px;"></textarea>
+        <input type="submit" value="Отправить">
+    </form>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <script src="js/login.js"></script>
+
 </footer>
 </body>
 </html>
