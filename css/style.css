@@ -573,7 +573,7 @@ body {
 /*********** CHECKBOX ***********/
 .filter-features-checkbox input[type='checkbox'] + .checkbox-indicator {
   content: "";
-  display: inline-block;
+  display: block;
   vertical-align: top;
   width: 27px;
   height: 23px;
@@ -597,7 +597,14 @@ body {
   position: relative;
   left: 3px;
   margin-bottom: 20px;
-  padding-right: 5px;
+  padding-right: 20px;
+}
+
+.filter-checkbox label {
+  display: flex;
+  margin-bottom: 20px;
+  padding-right: 20px;
+
 }
 
 filter-input-checkbox + label::before {
