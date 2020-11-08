@@ -574,37 +574,34 @@ body {
 .filter-features-checkbox input[type='checkbox'] + .checkbox-indicator {
   content: "";
   display: block;
-  vertical-align: top;
+  vertical-align: bottom;
   width: 27px;
   height: 23px;
   background-image: url("img/checkbox-off.svg");
   background-position: center left;
   background-repeat: no-repeat;
-  padding-right: 5px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .filter-features-checkbox input[type='checkbox']:checked + .checkbox-indicator {
   background-image: url("img/checkbox-on.svg");
 }
 
-.filter-features-checkbox input ~ span {
-  color: var(--basic-black);
-  opacity: 0.4;
+.filter-features-checkbox input ~ span:hover {
+  color: var(--basic-red);
+  opacity: 1;
 }
 
 .filter-checkbox {
   position: relative;
-  left: 3px;
-  margin-bottom: 20px;
-  padding-right: 20px;
+  left: 1px;
+  margin-top: 2px;
 }
 
 .filter-checkbox label {
   display: flex;
-  margin-bottom: 20px;
-  padding-right: 20px;
-
+  font-size: 16px;
+  margin-bottom: 17px;
 }
 
 filter-input-checkbox + label::before {
