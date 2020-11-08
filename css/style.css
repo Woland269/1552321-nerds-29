@@ -569,7 +569,7 @@ body {
 /*********** CHECKBOX ***********/
 .filter-input-checkbox + label::before {
   content: "";
-  position: relative;
+  position: absolute;
   left: -36px;
   width: 28px;
   height: 23px;
