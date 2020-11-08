@@ -273,7 +273,6 @@ body {
 .slider::after {
   content: "";
   height: 100%;
-  width: 100vw;
   position: absolute;
   top: 0;
   left: 50%;
@@ -570,6 +569,7 @@ body {
   user-select: none;
 }
 
+/*********** CHECKBOX ***********/
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -579,17 +579,6 @@ body {
   border: 2px solid var(--basic-gray-prices);
   border-radius: 10%;
   opacity: 0.4;
-}
-
-.filter-input-checkbox + label::after: {
-  content: "";
-  position: absolute;
-  left: -36px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--basic-gray-prices);
-  border-radius: 10%;
-  opacity: 1;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -605,6 +594,7 @@ body {
   background-position: 0 0;
 }
 
+/*********** RADIO ***********/
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
