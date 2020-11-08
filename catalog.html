@@ -91,26 +91,31 @@
       <fieldset class="filter-features">
           <legend>Особенности:</legend>
             <ul class="filter-checkbox">
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slaider" id="filter-slaider" checked>
-                  <label for="filter-slaider">Слайдер</label>
-                    </li>
-      <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-advantages" id="filter-block-advantages">
-              <label for="filter-block-advantages">Блок преимуществ</label>
-                </li>
-        <li class="filter-option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-                  </li>
-        <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
-                </li>
-        <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
-                </li>
+              <label class="filter-features-checkbox">
+                <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+                  <span class="checkbox-indicator"></span>
+                      <span>Слайдер</span>
+                    </label>
+      <label class="filter-features-checkbox">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+                <span class="checkbox-indicator" for="filter-block-advantages"></span>
+                    <span>Блок преимуществ</span>
+                </label>
+        <label class="filter-features-checkbox">
+              <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+                <span class="checkbox-indicator" for="filter-news"></span>
+                  <span>Новости</span>
+                </label>
+        <label class="filter-features-checkbox">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+              <span class="checkbox-indicator" for="filter-gallery"></span>
+                <span>Галерея</span>
+              </label>
+        <label class="filter-features-checkbox">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+              <span class="checkbox-indicator" for="filter-basket"></span>
+                <span>Корзина</span>
+              </label>
                   </ul>
                         </fieldset>
                           <button type="submit" class="filter-button">Показать</button>

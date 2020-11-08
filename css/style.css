@@ -464,6 +464,10 @@ body {
 }
 
 /*********** FILTER-SORT ***********/
+.filter-category .features {
+  display: block;
+}
+
 .sort {
   display: flex;
   flex-wrap: wrap;
@@ -567,7 +571,36 @@ body {
 }
 
 /*********** CHECKBOX ***********/
-.filter-input-checkbox + label::before {
+.filter-features-checkbox input[type='checkbox'] + .checkbox-indicator {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 23px;
+  background-image: url("img/checkbox-off.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.filter-features-checkbox input[type='checkbox']:checked + .checkbox-indicator {
+  background-image: url("img/checkbox-on.svg");
+}
+
+.filter-features-checkbox input ~ span {
+  color: var(--basic-black);
+  opacity: 0.4;
+}
+
+.filter-checkbox {
+  position: relative;
+  left: 3px;
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+
+filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -36px;
@@ -591,7 +624,7 @@ filter-input-checkbox + label::after {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: px;
