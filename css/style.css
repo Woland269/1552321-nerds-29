@@ -569,9 +569,9 @@ body {
 /*********** CHECKBOX ***********/
 .filter-input-checkbox + label::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: -36px;
-  width: 27px;
+  width: 28px;
   height: 23px;
   background-image: url("img/checkbox-off.svg");
   opacity: 0.4;
@@ -596,8 +596,8 @@ filter-input-checkbox + label::after {
   position: absolute;
   top: px;
   left: -40px;
-  width: 27px;
-  height: 23px;
+  width: 35px;
+  height: 25px;
   background-image: url("img/checkbox-on.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
@@ -759,9 +759,15 @@ filter-input:focus + label::before {
   list-style: none;
 }
 
+.browser-current svg {
+  position: relative;
+  top: 15px;
+}
+
 .browser svg {
   position: relative;
   top: 15px;
+  opacity: 1;
 }
 
 .catalog-item-second:not(:first-child):hover path,
@@ -770,7 +776,7 @@ filter-input:focus + label::before {
 .catalog-item-fifth:not(:first-child):hover path,
 .catalog-item-sixth:not(:first-child):hover path {
   fill: var(--basic-gray-prices);
-  opacity: 0.12;
+  opacity: 1;
 }
 
 .catalog-item-current {
