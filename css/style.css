@@ -738,6 +738,10 @@ filter-input:focus + label::before {
 
 /* --- CATALOG-LIST --- */
 
+.card-title {
+  padding-top: 25px;
+}
+
 .catalog-list .card-title {
   font-size: 18px;
   line-height: 30px;
@@ -953,6 +957,30 @@ filter-input:focus + label::before {
   display: block;
 }
 
+.description-text {
+  width: 355px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  line-height: 18px;
+  color: var(--basic-gray-lighten);
+  position: relative;
+  bottom: 5px;
+}
+
+.price-button {
+  margin-top: 13px;
+  width: 200px;
+  height: 50px;
+  margin-right: 2px;
+  color: var(--basic-white);
+  background-color: var(--special);
+  border: none;
+  list-style: none;
+  outline: none;
+  border-radius: 3px;
+}
+
 /* pagination */
 .pagination-list {
   display: flex;
@@ -1019,29 +1047,6 @@ filter-input:focus + label::before {
   border-radius: 3px;
 }
 
-.description-text {
-  width: 355px;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  line-height: 18px;
-  color: var(--basic-gray-lighten);
-  position: relative;
-  bottom: 5px;
-}
-
-.price-button {
-  margin-top: 10px;
-  width: 200px;
-  height: 50px;
-  margin-right: 3px;
-  color: var(--basic-white);
-  background-color: var(--special);
-  border: none;
-  list-style: none;
-  outline: none;
-  border-radius: 3px;
-}
 
 /* filter */
 .filter legend {
