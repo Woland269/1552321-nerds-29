@@ -750,6 +750,15 @@ filter-input:focus + label::before {
   font-weight: bold;
 }
 
+.catalog-list .card-title:hover {
+  color: var(--special);
+}
+
+.catalog-list .card-title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1052,7 +1061,6 @@ filter-input:focus + label::before {
   height: 50px;
   border-radius: 3px;
 }
-
 
 /* filter */
 .filter legend {
