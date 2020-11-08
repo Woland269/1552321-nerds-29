@@ -996,6 +996,14 @@ filter-input:focus + label::before {
   border-radius: 3px;
 }
 
+.price-button:hover {
+  background-color: var(--basic-red-lighten);
+}
+
+.price-button:active {
+  background-color: var(--basic-red-darken);
+}
+
 /* pagination */
 .pagination-list {
   display: flex;
@@ -1775,6 +1783,7 @@ filter-input:focus + label::before {
   width: 19px;
   height: 3px;
   background-color: var(--special);
+  opacity: 0.3;
 }
 
 .modal-close::before {
@@ -1873,7 +1882,7 @@ filter-input:focus + label::before {
 }
 
 .login-form input[type="text"],
-.login-form input[type="email"] {
+.login-form input[type="login"] {
   font: inherit;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -1884,7 +1893,7 @@ filter-input:focus + label::before {
   right: 60px;
 }
 
-.login-form input[type="login"] {
+.login-form input[type="email"] {
   font: inherit;
   color: var(--basic-black);
   background-color: var(--basic-white);
