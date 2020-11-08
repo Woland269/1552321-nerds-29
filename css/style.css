@@ -588,7 +588,7 @@ body {
 }
 
 .filter-features-checkbox input ~ span:hover {
-  color: var(--basic-red);
+  color: var(--basic-black);
   opacity: 1;
 }
 
