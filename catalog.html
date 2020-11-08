@@ -73,20 +73,23 @@
 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-grid">
       <legend>Сетка:</legend>
-        <ul class="filter-radio">
-            <li class="filter-option filter-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-site" value="adaptive" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
-                  </li>
-        <li class="filter-option filter-radio">
-            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-site" value="fixed" id="filter-fixed">
-              <label for="filter-fixed">Фиксированная</label>
-                </li>
-        <li class="filter-option filter-radio">
-              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-site" value="rubber" id="filter-rubber">
-                <label  for="filter-rubber">Резиновая</label>
-                </li>
-                  </ul>
+        <div class="filter-radio">
+            <label class="filter-features-radio">
+              <input class="visually-hidden" type="radio" name="product-site" value="adaptive" checked="">
+                <span class="radio-indicator"></span>
+                  <span>Адаптивная</span>
+                </label>
+        <label class="filter-features-radio">
+            <input class="visually-hidden" type="radio" name="product-site" value="fixed">
+              <span class="radio-indicator"></span>
+                <span class="radio-text">Фиксированная</span>
+              </label>
+        <label class="filter-features-radio">
+          <input class="visually-hidden" type="radio" name="product-site" value="rubber">
+              <span class="radio-indicator"></span>
+                <span>Резиновая</span>
+            </label>
+              </div>
                     </fieldset>
       <fieldset class="filter-features">
           <legend>Особенности:</legend>
@@ -97,22 +100,22 @@
                       <span>Слайдер</span>
                     </label>
       <label class="filter-features-checkbox">
-            <input class="visually-hidden" type="checkbox" name="features-group" value="slide">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="advantages">
                 <span class="checkbox-indicator" for="filter-block-advantages"></span>
                     <span>Блок преимуществ</span>
                 </label>
         <label class="filter-features-checkbox">
-              <input class="visually-hidden" type="checkbox" name="features-group" value="slide" checked="">
+              <input class="visually-hidden" type="checkbox" name="features-group" value="news" checked="">
                 <span class="checkbox-indicator" for="filter-news"></span>
                   <span>Новости</span>
                 </label>
         <label class="filter-features-checkbox">
-            <input class="visually-hidden" type="checkbox" name="features-group" value="slide">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="gallery">
               <span class="checkbox-indicator" for="filter-gallery"></span>
                 <span>Галерея</span>
               </label>
         <label class="filter-features-checkbox">
-            <input class="visually-hidden" type="checkbox" name="features-group" value="slide">
+            <input class="visually-hidden" type="checkbox" name="features-group" value="basket">
               <span class="checkbox-indicator" for="filter-basket"></span>
                 <span>Корзина</span>
               </label>
