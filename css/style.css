@@ -75,14 +75,12 @@ body {
 
 .page-catalog {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: 130px;
   padding: 0 10px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 220px 1fr;
   grid-column-gap: 140px;
-  margin-left: 343px;
-  justify-content: center;
-  align-self: center;
 }
 
 .inner-page .main-navigation-wrapper {
@@ -1563,7 +1561,7 @@ body {
   height: 416px;
   margin-top: 60px;
   position: relative;
-  right: 176px;
+  right: 70px;
 }
 
 .marker {
