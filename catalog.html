@@ -11,7 +11,7 @@
  <header class="catalog-header">
 <nav class="main-navigation">
   <div class="center">
-   <a class="main-logo">
+   <a class="main-logo" href="index.html">
      <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
    </a>
    <div class="main-header-bar">
@@ -65,8 +65,8 @@
               <a class="sort-price" href="#">По&nbsp;типу</a>
                 <a class="sort-price" href="#">По&nbsp;названию</a>
                 <div class="arrows-container">
-        <div class="arrows-item arrow-down"> <img src="img/icon-down.svg" alt="Стрелка вниз"> </div>
-        <div class="arrows-item arrow-up"> <img src="img/icon-up.svg" alt="Стрелка вверх"> </div>
+        <button class="arrows-item arrow-down"> <img src="img/icon-down.svg" alt="Стрелка вниз"> </button>
+        <button class="arrows-item arrow-up"> <img src="img/icon-up.svg" alt="Стрелка вверх"> </button>
       </div>
                   </ul>
 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -116,15 +116,19 @@
                         </form>
         </section>
         <section>
-            <ul class="catalog-list">
+          <ul class="catalog-list">
   <li class="catalog-item-current">
   <a href="#">
     <div class="browser">
-    <img src="img/browser.svg" width="360px" height="50px" alt="">
+      <svg src="img/browser.svg" width="360px" height="50px" alt="">
+        <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+                  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+                  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                </svg>
   </div>
   <img src="img/sedona.jpg" width="359px" height="578px" alt="">
   <div class="description">
-    <h3>Sedona</h3>
+    <a class="card-title">sedona</a>
   <p class="description-text">Информационный сайт<br>для туристов</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Sedona» в корзину">9 900 ₽</button>
 </div>
@@ -133,11 +137,15 @@
   <li class="catalog-item-second">
       <a href="#">
         <div class="browser">
-        <img src="img/browser04.svg" width="360px" height="50px" alt="">
+        <svg src="img/browser04.svg" width="360px" height="50px" alt="">
+          <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                  </svg>
       </div>
-    <img src="img/pink.jpg" class="OG" width="358px" height="578px" alt="">
+    <img src="img/pink.jpg" width="358px" height="578px" alt="">
     <div class="page-hover2">
-    <h3>Pink app</h3>
+    <a class="card-title">pink app</a>
   <p class="description-text">Продуктовый лендинг приложения для IOS и Android</p>
   <button class="price-button" type="button" aria-label="Добавить веб-сайт «Pink app» в корзину">9 900₽</button>
 </div>
@@ -146,11 +154,15 @@
   <li class="catalog-item-third">
     <a href="#">
       <div class="browser">
-      <img src="img/browser04.svg" width="360px" height="50px" alt="">
+        <svg src="img/browser04.svg" width="360px" height="50px" alt="">
+          <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+                    s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+                    c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                  </svg>
     </div>
   <img src="img/barbershop.jpg" width="358px" height="578px" alt="">
   <div class="page-hover3">
-    <h3>Barbershop</h3>
+    <a class="card-title">barbershop</a>
   <p class="description-text">Сайт салон красоты. Для мужчин, да.</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Barbershop» в корзину">9 900₽</button>
 </div>
@@ -159,11 +171,15 @@
 <li class="catalog-item-fourth">
   <a href="#">
     <div class="browser">
-    <img src="img/browser04.svg" width="360px" height="50px" alt="">
+      <svg src="img/browser04.svg" width="360px" height="50px" alt="">
+        <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+                  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+                  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                </svg>
   </div>
   <img src="img/mishka.jpg" width="359px" height="578px" alt="">
   <div class="page-hover4">
-    <h3>Mishka</h3>
+    <a class="card-title">mishka</a>
   <p class="description-text">Интернет магазин вязаных игрушек</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Mishka» в корзину">9 900₽</button>
 </div>
@@ -172,11 +188,15 @@
   <li class="catalog-item-fifth">
     <a href="#">
       <div class="browser">
-      <img src="img/browser04.svg" width="360px" height="50px" alt="">
+        <svg src="img/browser04.svg" width="360px" height="50px" alt="">
+          <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+                    s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+                    c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                  </svg>
     </div>
       <img src="img/aplus.jpg" width="359px" height="578px" alt="">
       <div class="page-hover5">
-    <h3>A Plus</h3>
+    <a class="card-title">a plus</a>
   <p class="description-text">Лендинг курсов повышения квалификации</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Aplus» в корзину">9 900₽</button>
 </div>
@@ -185,11 +205,15 @@
 <li class="catalog-item-sixth">
   <a href="#">
     <div class="browser">
-    <img src="img/browser04.svg" width="360px" height="50px" alt="">
+      <svg src="img/browser04.svg" width="360px" height="50px" alt="">
+        <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+                  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+                  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+                </svg>
   </div>
   <img src="img/kvast.jpg" width="359px" height="578px" alt="">
   <div class="page-hover6">
-    <h3>Kbact</h3>
+    <a class="card-title">kbact</a>
   <p class="description-text">Промо-сайт производителя крафтового кваса</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «kvast» в корзину">9 900₽</button>
 </div>
