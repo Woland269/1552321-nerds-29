@@ -60,6 +60,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -69,6 +70,7 @@ body {
   width: 100%;
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -84,6 +86,7 @@ body {
 }
 
 .inner-page .main-navigation-wrapper {
+  grid-template-columns: 170px 1fr -webkit-min-content;
   grid-template-columns: 170px 1fr min-content;
 }
 
@@ -132,6 +135,7 @@ body {
 
 .main-navigation-wrapper {
   display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
   width: 1200px;
   margin: 0 auto;
@@ -352,6 +356,7 @@ body {
 .features-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 0;
   column-gap: 0;
   margin: 0;
   padding: 0;
@@ -391,6 +396,7 @@ body {
 .index-columns {
   display: grid;
   grid-template-columns: 651px 379px;
+  -moz-column-gap: 149px;
   column-gap: 149px;
   margin-top: 8px;
   color: var(--basic-black);
@@ -567,6 +573,8 @@ body {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 
@@ -2040,10 +2048,12 @@ filter-input:focus + label::before {
 
 .modal-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -2053,8 +2063,25 @@ filter-input:focus + label::before {
   opacity: 1;
 }
 
-
 /* Animations */
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 @keyframes bounce {
   0% {
@@ -2071,6 +2098,28 @@ filter-input:focus + label::before {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
