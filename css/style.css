@@ -858,7 +858,7 @@ filter-input:focus + label::before {
   border-radius: 5px;
 }
 
-.catalog-item-current .description {
+.catalog-item-current:hover .description {
   display: block;
   position: absolute;
   bottom: 15px;
@@ -868,6 +868,10 @@ filter-input:focus + label::before {
   width: 360px;
   min-height: 231px;
   text-align: center;
+}
+
+.description {
+  display: none;
 }
 
 .catalog-item-second {
@@ -1093,10 +1097,11 @@ filter-input:focus + label::before {
 
 .pagination-item a {
   display: block;
+  height: 30px;
   padding: 10px 19px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
-  border: 3px solid var(--basic-gray);
+  border: px solid var(--basic-gray);
   border-radius: 3px;
 }
 
