@@ -831,6 +831,33 @@ filter-input:focus + label::before {
   position: relative;
 }
 
+.catalog-item-current img {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.catalog-item-second:hover img,
+.catalog-item-third:hover img,
+.catalog-item-fourth:hover img,
+.catalog-item-fifth:hover img,
+.catalog-item-sixth:hover img {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+  border-radius: 5px;
+}
+
+.catalog-item-current img,
+.catalog-item-second img,
+.catalog-item-third img,
+.catalog-item-fourth img,
+.catalog-item-fifth img,
+.catalog-item-sixth img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
 .catalog-item-current .description {
   display: block;
   position: absolute;
@@ -1591,7 +1618,7 @@ filter-input:focus + label::before {
 .marker-catalog {
   position: relative;
   bottom: 140px;
-  right: 622px;
+  margin-left: 802px;
 }
 
 .footer-contacts-catalog {
@@ -1606,7 +1633,7 @@ filter-input:focus + label::before {
   text-align: left;
   line-height: 18px;
   padding-left: 50px;
-  margin-left: 352px;
+  margin-left: 120px;
 }
 
 .footer-contacts-catalog p {
@@ -1637,7 +1664,7 @@ filter-input:focus + label::before {
 .marker {
   position: relative;
   bottom: 337px;
-  left: 1034px;
+  margin-left: 802px;
 }
 
 .modal-map img {
@@ -1652,7 +1679,6 @@ filter-input:focus + label::before {
   padding-top: 31px;
   position: relative;
   bottom: 566px;
-  left: 352px;
   display: block;
   margin: 0;
   width: 269px;
@@ -1661,6 +1687,7 @@ filter-input:focus + label::before {
   text-align: left;
   line-height: 18px;
   padding-left: 50px;
+  margin-left: 120px;
 }
 
 .footer-contacts p {
