@@ -806,6 +806,7 @@ filter-input:focus + label::before {
   opacity: 1;
 }
 
+.catalog-item-current:hover path,
 .catalog-item-second:not(:first-child):hover path,
 .catalog-item-third:not(:first-child):hover path,
 .catalog-item-fourth:not(:first-child):hover path,
@@ -1128,6 +1129,17 @@ filter-input:focus + label::before {
 }
 
 .pagination-item a:active {
+  display: block;
+  background-color: var(--basic-submit-gray-darken);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-item-1 a:hover {
+  background-color: var(--basic-submit-gray);
+}
+
+.pagination-item-1 a:active {
   display: block;
   background-color: var(--basic-submit-gray-darken);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
