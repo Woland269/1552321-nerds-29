@@ -1814,6 +1814,16 @@ filter-input:focus + label::before {
   transform: rotate(-45deg);
 }
 
+.modal-close:hover::before,
+.modal-close:hover::after {
+  opacity: 1;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  opacity: 0.1;
+}
+
 .modal-login {
   display: none;
   top: 183px;
@@ -1956,6 +1966,13 @@ filter-input:focus + label::before {
 .modal-error {
   animation: shake 0.6s;
 }
+
+.login-icon-user:required:invalid,
+.login-icon-password:required:invalid {
+  border-color: var(--special);
+  opacity: 1;
+}
+
 
 /* Animations */
 
