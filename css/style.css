@@ -1151,7 +1151,15 @@ filter-input:focus + label::before {
   color: var(--basic-black);
 }
 
-.sort-item {
+.sort-price:hover {
+  opacity: 0.6;
+}
+
+.sort-price:active {
+  opacity: 1;
+}
+
+.sort-price-current {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1161,6 +1169,7 @@ filter-input:focus + label::before {
   top: 4px;
   list-style: none;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 /*********** ARROWS DOWN&UP ***********/
@@ -1170,18 +1179,18 @@ filter-input:focus + label::before {
   height: 10px;
   justify-content: space-between;
   margin-left: 280px;
-  opacity: 0.3;
+  opacity: 0.2;
   cursor: pointer;
   border: none;
   outline: none;
 }
 
-.arrows-item:hover,
-.arrows-item:focus {
-  opacity: 0.6;
+.arrows-container:hover,
+.arrows-container:focus {
+  opacity: 0.4;
 }
 
-.arrows-item:active {
+.arrows-container:active {
   opacity: 1;
 }
 
