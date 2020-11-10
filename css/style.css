@@ -803,23 +803,23 @@ filter-input:focus + label::before {
   list-style: none;
 }
 
-.browser-current svg {
+.browser-current img {
   position: relative;
   top: 15px;
 }
 
-.browser svg {
+.browser img {
   position: relative;
   top: 15px;
   opacity: 1;
 }
 
-.catalog-item-current:hover path,
-.catalog-item-second:not(:first-child):hover path,
-.catalog-item-third:not(:first-child):hover path,
-.catalog-item-fourth:not(:first-child):hover path,
-.catalog-item-fifth:not(:first-child):hover path,
-.catalog-item-sixth:not(:first-child):hover path {
+.catalog-item-current:hover .hove-card,
+.catalog-item-second:not(:first-child):hover .hove-card,
+.catalog-item-third:not(:first-child):hover.hove-card,
+.catalog-item-fourth:not(:first-child):hover .hove-card,
+.catalog-item-fifth:not(:first-child):hover .hove-card,
+.catalog-item-sixth:not(:first-child):hover .hove-card {
   fill: var(--basic-gray-prices);
   opacity: 1;
 }
@@ -827,10 +827,10 @@ filter-input:focus + label::before {
 .catalog-item-current {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 578px;
   min-height: 240px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 
 .catalog-item-current a {
@@ -840,28 +840,16 @@ filter-input:focus + label::before {
   position: relative;
 }
 
-.catalog-item-current img {
-  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-.catalog-item-second:hover img,
-.catalog-item-third:hover img,
-.catalog-item-fourth:hover img,
-.catalog-item-fifth:hover img,
-.catalog-item-sixth:hover img {
+.catalog-item-current:hover .hover-card,
+.catalog-item-second:hover .hover-card,
+.catalog-item-third:hover .hover-card,
+.catalog-item-fifth:hover .hover-card,
+.catalog-item-sixth:hover .hover-card {
   box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
   border-radius: 5px;
 }
 
-.catalog-item-current img,
-.catalog-item-second img,
-.catalog-item-third img,
-.catalog-item-fourth img,
-.catalog-item-fifth img,
-.catalog-item-sixth img {
+.hover-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 5px;
@@ -886,8 +874,8 @@ filter-input:focus + label::before {
 .catalog-item-second {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 578px;
   min-height: 240px;
 }
 
@@ -917,10 +905,10 @@ filter-input:focus + label::before {
 .catalog-item-third {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 360px;
+  height: 578px;
   min-height: 240px;
-  margin-bottom: 7px;
+  margin-bottom: 100px;
 }
 
 .catalog-item-third a {
@@ -949,8 +937,8 @@ filter-input:focus + label::before {
 .catalog-item-fourth {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 578px;
   min-height: 240px;
 }
 
@@ -980,8 +968,8 @@ filter-input:focus + label::before {
 .catalog-item-fifth {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 578px;
   min-height: 240px;
 }
 
@@ -1011,8 +999,8 @@ filter-input:focus + label::before {
 .catalog-item-sixth {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 578px;
   min-height: 240px;
 }
 
