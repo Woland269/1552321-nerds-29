@@ -245,8 +245,10 @@ body {
 /*********** MAIN-LOGO ***********/
 .main-logo img {
   position: absolute;
+  margin: 0 auto;
+  padding: 0 10px;
   margin-top: 48px;
-  left: 372px;
+  margin-left: -20px;
 }
 
 .main-logo img:hover,
@@ -462,14 +464,12 @@ body {
 }
 
 /*********** FILTER-SORT ***********/
-.filter-category .features {
-  display: block;
+.filter {
+
 }
 
-.sort {
-  display: flex;
-  flex-wrap: wrap;
-  width: 260px;
+.filter-category .features {
+  display: block;
 }
 
 .filter-grid {
@@ -491,7 +491,14 @@ body {
   font-size: 16px;
 }
 
-.filter fieldset {
+.filter-grid {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.filter-features {
   padding: 0;
   margin: 0;
   margin-bottom: 0;
@@ -507,14 +514,19 @@ body {
   font-size: 18px;
   line-height: 30px;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .filter-features legend {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   position: relative;
+  padding-top: 25px;
 }
 
 .filter ul {
@@ -650,7 +662,7 @@ body {
 .filter-radio label {
   display: flex;
   font-size: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .radio-indicator {
@@ -674,7 +686,8 @@ filter-input:focus + label::before {
 
 .range-filter {
   width: 260px;
-  margin-top: 51px;
+  margin-top: 45px;
+  margin-bottom: 29px;
 }
 
 .filter-item legend {
@@ -682,6 +695,8 @@ filter-input:focus + label::before {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
+  bottom: 2px;
 }
 
 .range-controls {
@@ -790,11 +805,11 @@ filter-input:focus + label::before {
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 59px;
   margin-bottom: 0;
   order: 0;
   list-style: none;
-  margin-top: 70px;
+  margin-top: 24px;
+  margin-right: px;
 }
 
 .browser {
@@ -816,6 +831,7 @@ filter-input:focus + label::before {
   height: 578px;
   min-height: 240px;
   margin-bottom: 72px;
+  margin-right: 42px;
 }
 
 .catalog-item-current a {
@@ -1062,7 +1078,7 @@ filter-input:focus + label::before {
   list-style: none;
   width: 100%;
   margin-bottom: 49px;
-  margin-top: 97px;
+  margin-top: 85px;
 }
 
 .pagination-item {
@@ -1190,8 +1206,8 @@ filter-input:focus + label::before {
   position: relative;
   line-height: 30px;
   font-size: 18px;
-  margin-left: 140px;
-  bottom: 20px;
+  right: 265px;
+  bottom: 3px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -1200,14 +1216,20 @@ filter-input:focus + label::before {
   color: red;
 }
 
+.sort-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 265px;
+  position: relative;
+  bottom: 16px;
+}
+
 .sort-price {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  position: relative;
   margin-right: 26px;
-  left: 267px;
-  top: 3px;
   opacity: 0.3;
   color: var(--basic-black);
 }
@@ -1225,10 +1247,6 @@ filter-input:focus + label::before {
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 25px;
-  position: relative;
-  left: 266px;
-  top: 4px;
-  list-style: none;
   color: var(--basic-black);
   opacity: 1;
 }
@@ -1239,11 +1257,13 @@ filter-input:focus + label::before {
   width: 40px;
   height: 10px;
   justify-content: space-between;
-  margin-left: 288px;
+  margin-left: 759px;
   opacity: 0.2;
   cursor: pointer;
   border: none;
   outline: none;
+  position: absolute;
+  top: 413px;
 }
 
 .arrows-container:hover,
@@ -1263,7 +1283,6 @@ filter-input:focus + label::before {
 
 .arrow-down {
   opacity: 1;
-  margin-right: 16px;
   border: none;
   outline: none;
   background-color: var(--basic-white);
@@ -1637,6 +1656,7 @@ filter-input:focus + label::before {
   margin-bottom: 26px;
   margin: 0 auto;
   margin-bottom: 45px;
+  position: relative;
 }
 
 .map-catalog iframe {
@@ -1651,8 +1671,8 @@ filter-input:focus + label::before {
 
 .footer-contacts-catalog {
   padding-top: 31px;
-  position: relative;
-  bottom: 565px;
+  position: absolute;
+  bottom: 54px;
   display: block;
   margin: 0;
   width: 269px;
@@ -1661,7 +1681,6 @@ filter-input:focus + label::before {
   text-align: left;
   line-height: 18px;
   padding-left: 50px;
-  margin-left: 120px;
 }
 
 .footer-contacts-catalog p {
@@ -1688,6 +1707,7 @@ filter-input:focus + label::before {
   margin-top: 60px;
   margin: 0 auto;
   margin-bottom: 45px;
+  position: relative;
 }
 
 .marker {
@@ -1706,8 +1726,8 @@ filter-input:focus + label::before {
 
 .footer-contacts {
   padding-top: 31px;
-  position: relative;
-  bottom: 566px;
+  position: absolute;
+  bottom: 54px;
   display: block;
   margin: 0;
   width: 269px;

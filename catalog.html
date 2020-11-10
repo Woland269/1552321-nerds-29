@@ -37,7 +37,7 @@
           <div class="page-catalog">
   <section class="filters">
     <div class="breadcrumbs">
-    <form class="filters" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
       <fieldset class="filter-item">
           <legend>Стоимость:</legend>
           <div class="range-filter">
@@ -58,9 +58,7 @@
             </div>
           </div>
           </fieldset>
-      </form>
     </div>
-<form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-grid">
       <legend>Сетка:</legend>
         <div class="filter-radio">
@@ -115,14 +113,16 @@
                         </form>
         </section>
         <section>
-          <p class="breadcrumbs-sort">Сортировать:</p>
-        <a class="sort-price-current" href="#">По&nbsp;цене</a>
-          <a class="sort-price" href="#">По&nbsp;типу</a>
-            <a class="sort-price" href="#">По&nbsp;названию</a>
+          <ul class="sort-list">
+            <li class="breadcrumbs-sort">Сортировать:</li>
+        <li class="sort-prices-current"><a class="sort-price" href="#">По&nbsp;цене</a></li>
+          <li class="sort-prices"><a class="sort-price" href="#">По&nbsp;типу</a>
+            <li class="sort-prices"><a class="sort-price" href="#">По&nbsp;названию</a>
+            </ul>
             <div class="arrows-container">
     <a class="arrows-item arrow-down"> <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"></a>
     <a class="arrows-item arrow-up"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"></a>
-  </div>
+</div>
           <ul class="catalog-list">
   <li class="catalog-item-current">
   <div>
