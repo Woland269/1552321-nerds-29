@@ -220,7 +220,7 @@ body {
   left: 9px;
   width: 16px;
   height: 18px;
-  background-image: url("img/basket.svg");
+  background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -401,7 +401,6 @@ body {
   margin-top: 8px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-image: url("img/nerds-illustration.png");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
   border-top: 2px solid var(--basic-gray);
@@ -576,6 +575,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  vertical-align: top;
 }
 
 /*********** CHECKBOX ***********/
@@ -585,14 +585,14 @@ body {
   vertical-align: bottom;
   width: 27px;
   height: 23px;
-  background-image: url("img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-position: center left;
   background-repeat: no-repeat;
   margin-right: 8px;
 }
 
 .filter-features-checkbox input[type='checkbox']:checked + .checkbox-indicator {
-  background-image: url("img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .checkbox-indicator input ~ span {
@@ -627,14 +627,14 @@ body {
   vertical-align: bottom;
   width: 25px;
   height: 25px;
-  background-image: url("img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   background-position: center left;
   background-repeat: no-repeat;
   margin-right: 11px;
 }
 
 .filter-features-radio input[type='radio']:checked + .radio-indicator {
-  background-image: url("img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 }
 
 .radio-indicator input ~ span {
