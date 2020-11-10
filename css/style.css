@@ -81,8 +81,8 @@ body {
   padding: 0 10px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 220px 1fr;
-  grid-column-gap: 141px;
+  grid-template-columns: 260px 1fr;
+  grid-column-gap: 100px;
 }
 
 .inner-page .main-navigation-wrapper {
@@ -1257,7 +1257,7 @@ filter-input:focus + label::before {
   width: 40px;
   height: 10px;
   justify-content: space-between;
-  margin-left: 280px;
+  margin-left: 288px;
   opacity: 0.2;
   cursor: pointer;
   border: none;
@@ -1281,7 +1281,7 @@ filter-input:focus + label::before {
 
 .arrow-down {
   opacity: 1;
-  margin-right: 7px;
+  margin-right: 16px;
   border: none;
   outline: none;
   background-color: var(--basic-white);
@@ -1318,6 +1318,7 @@ filter-input:focus + label::before {
 
 .skills {
   text-align: none;
+  margin-right: -10px;
 }
 
 .skills li {
@@ -1332,7 +1333,7 @@ filter-input:focus + label::before {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  bottom: 15px;
+  bottom: 30px;
   margin-bottom: 16px;
 }
 
@@ -1348,7 +1349,7 @@ filter-input:focus + label::before {
   weight: 700;
   font-weight: bold;
   font-style: normal;
-  margin-right: 11px;
+  margin: 0;
 }
 
 .block-skills sup {
@@ -1378,7 +1379,7 @@ filter-input:focus + label::before {
   border-bottom: 2px solid var(--basic-gray);
   position: relative;
   margin: 0;
-  margin-top: 43px;
+  margin-top: 11px;
   margin-bottom: 80px;
   padding-bottom: 36px;
   right: 17px;
@@ -1653,6 +1654,7 @@ filter-input:focus + label::before {
   margin-top: 100px;
   margin-bottom: 26px;
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 
 .map-catalog iframe {
@@ -1703,6 +1705,7 @@ filter-input:focus + label::before {
   height: 416px;
   margin-top: 60px;
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 
 .marker {
@@ -1759,10 +1762,6 @@ filter-input:focus + label::before {
   color: var(--basic-gray-lighten);
 }
 
-.main-footer {
-  margin-top: 45px;
-}
-
 /* SOCIAL */
 .vk img {
   position: relative;
@@ -1803,13 +1802,14 @@ filter-input:focus + label::before {
   font-size: 36px;
   line-height: 36px;
   margin-top: 30px;
-  margin-bottom: 9px;
 }
 
-.footer-span {
+.friends p {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-extra-gray);
+  position: relative;
+  bottom: 26px;
 }
 
 .social1 {
