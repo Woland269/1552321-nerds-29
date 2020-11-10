@@ -1832,10 +1832,6 @@ filter-input:focus + label::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.page-footer {
-  padding-bottom: 500px;
-}
-
 /* MODAL */
 .modal {
   color: var(--basic-black);
