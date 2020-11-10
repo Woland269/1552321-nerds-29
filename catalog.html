@@ -11,21 +11,19 @@
  <header class="catalog-header">
 <nav class="main-navigation">
   <div class="center">
-   <a class="main-logo" href="index.html">
-     <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
-   </a>
    <div class="main-header-bar">
    <div class="main-navigation-wrapper">
+     <a class="main-logo" href="index.html">
+       <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
+     </a>
      <ul class="site-navigation">
   <li><a href="blank.html">Студия</a></li>
     <li><a href="blank.html">Клиенты</a></li>
-    <li class="navigation-redline" width="73" height="2"><a href="catalog.html">Магазин</a>
-    <img src="img/nav-redline.svg" alt="decoration-redline"></li>
+    <li><a href="catalog.html">Магазин</a></li>
     <li><a href="blank.html">Контакты</a></li>
-    </ul>
-  <div class="user-navigation">
-      <a class="login-basket" href="login.html">Корзина</a>
-</div>
+      <img src="img/basket.svg" alt="decoration-redline"></li>
+    <li class="login-basket"><a href="#">Корзина</a></li>
+  </ul>
 </div>
 </div>
 </div>
@@ -60,15 +58,7 @@
             </div>
           </div>
           </fieldset>
-          </form>
-          <p class="breadcrumbs-sort">Сортировать:</p>
-            <a class="sort-price-current" href="#">По&nbsp;цене</a>
-              <a class="sort-price" href="#">По&nbsp;типу</a>
-                <a class="sort-price" href="#">По&nbsp;названию</a>
-                <div class="arrows-container">
-        <a class="arrows-item arrow-down"> <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"></a>
-        <a class="arrows-item arrow-up"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"></a>
-      </div>
+      </form>
     </div>
 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-grid">
@@ -125,6 +115,14 @@
                         </form>
         </section>
         <section>
+          <p class="breadcrumbs-sort">Сортировать:</p>
+        <a class="sort-price-current" href="#">По&nbsp;цене</a>
+          <a class="sort-price" href="#">По&nbsp;типу</a>
+            <a class="sort-price" href="#">По&nbsp;названию</a>
+            <div class="arrows-container">
+    <a class="arrows-item arrow-down"> <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"></a>
+    <a class="arrows-item arrow-up"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"></a>
+  </div>
           <ul class="catalog-list">
   <li class="catalog-item-current">
   <div>
@@ -148,7 +146,7 @@
     </div>
     <div class="hover-card">
         <img class="shadow" src="img/pink.jpg" width="360" height="578" alt="Приложения для IOS и Android">
-          <div class="page-hover2">
+          <div class="page-hover-second">
               <a class="card-title" href="#">pink app</a>
                   <p class="description-text">Продуктовый лендинг приложения<br>для IOS и Android</p>
           <button class="price-button" type="button" aria-label="Добавить веб-сайт «Pink app» в корзину">9 900₽</button>
@@ -164,7 +162,7 @@
     <div class="hover-card">
   <img src="img/barbershop.jpg" width="360" height="578" alt="Салон красоты для мужчин">
 </div>
-  <div class="page-hover3">
+  <div class="page-hover-third">
     <a class="card-title" href="#">barbershop</a>
   <p class="description-text">Сайт салон красоты.<br>Для мужчин, да.</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Barbershop» в корзину">9 900₽</button>
@@ -179,7 +177,7 @@
                 <div class="hover-card">
   <img src="img/mishka.jpg" width="360" height="578" alt="Магазин вязаных игрушек">
       </div>
-  <div class="page-hover4">
+  <div class="page-hover-fourth">
     <a class="card-title" href="#">mishka</a>
   <p class="description-text">Интернет магазин<br>вязаных игрушек</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Mishka» в корзину">9 900₽</button>
@@ -194,7 +192,7 @@
               <div class="hover-card">
       <img src="img/aplus.jpg" width="360" height="578" alt="Школа Aplus">
     </div>
-      <div class="page-hover5">
+      <div class="page-hover-fifth">
     <a class="card-title" href="#">a plus</a>
   <p class="description-text">Лендинг курсов повышения<br>квалификации</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «Aplus» в корзину">9 900₽</button>
@@ -209,7 +207,7 @@
               <div class="hover-card">
   <img src="img/kvast.jpg" width="360" height="578" alt="Производитель крафтового кваса">
 </div>
-  <div class="page-hover6">
+  <div class="page-hover-sixth">
     <a class="card-title" href="#">kbact</a>
   <p class="description-text">Промо-сайт производителя<br>крафтового кваса</p>
   <button class="price-button" type="button"  aria-label="Добавить веб-сайт «kvast» в корзину">9 900₽</button>
@@ -221,7 +219,7 @@
       <li class="pagination-item pagination-item-current"><a>1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item-1 pagination-button"><a href="#">Следующая</a></li>
+      <li class="pagination-item-first pagination-button"><a href="#">Следующая</a></li>
     </ul>
     </section>
   </div>
@@ -231,18 +229,20 @@
      <div class="map-catalog">
        <h2 class="visually-hidden">Карта</h2>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" style="width:100%;height:416px" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+ <div class="center">
        <img class="marker" src="img/map-marker.png" width="231" height="190" alt="Указатель местоположения">
-         <section class="footer-contacts-catalog">
-  <h3>NЁRDS DESIGN STUDIO</h3>
-  <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-  <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-  <a class="login-link" href="login.html">Напишите нам</a>
-   </section>
+               <section class="footer-contacts">
+     <h3>NЁRDS DESIGN STUDIO</h3>
+     <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+   <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+ <a class="login-link" href="login.html">Напишите нам</a>
+ </div>
+         </section>
   </div>
   </section>
  <div class="center">
  <section class="footer-social">
-   <ul class="social1">
+   <ul class="social-one">
      <li class="vk">
      <a class="social-button" href="#">
        <img src="img/vk-icon.svg" aria-hidden="true" width="81" height="15" alt="Логотип вконтакте">
@@ -273,14 +273,14 @@
   <h2>Напишите нам</h2>
    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
      <div class="wrapper">
-          <p class="modal-description-1">Ваше&nbsp;имя:</p>
+          <p class="modal-description-first">Ваше&nbsp;имя:</p>
         <label class="visually-hidden" for="login-login">Логин</label>
       <input class="login-icon-user" id="login-login" name="login" placeholder="Имя Фамилия">
-        <p class="modal-description-2">Ваш&nbsp;email:</p>
+        <p class="modal-description-second">Ваш&nbsp;email:</p>
         <label class="visually-hidden" for="login-password">Email</label>
       <input class="login-icon-password" id="login-password" type="email" name="password" placeholder="email@example.com">
   </div>
-        <p class="modal-description-3">Текст письма:</p>
+        <p class="modal-description-third">Текст письма:</p>
         <label class="visually-hidden" for="contact-text">Текст письма:</label>
         <textarea class="text" name="text" id="contact-text" rows="5" cols="250" placeholder="В свободной форме" required="" style="margin: 0px; height: 94px; width: 730px;"></textarea>
         <input type="submit" value="Отправить">
