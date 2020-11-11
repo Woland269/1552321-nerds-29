@@ -926,7 +926,6 @@ filter-input:focus + label::before {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  line-height: 18px;
   color: var(--basic-gray-lighten);
   position: relative;
   bottom: 5px;
