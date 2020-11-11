@@ -276,6 +276,13 @@ body {
   margin-top: -23px;
 }
 
+.slider-list h2 {
+  font-size: 55px;
+  line-height: 55px;
+  margin-top: 76px;
+  margin-bottom: 0;
+}
+
 .slider::after {
   content: "";
   height: 100%;
@@ -873,7 +880,8 @@ filter-input:focus + label::before {
 /************ CATALOG-LIST  ***************/
 
 .card-title {
-  padding-top: 25px;
+  padding-top: 26px;
+  margin-bottom: 5px;
 }
 
 .catalog-list .card-title {
@@ -900,19 +908,35 @@ filter-input:focus + label::before {
   order: 0;
   list-style: none;
   margin-top: 24px;
-  margin-right: px;
+}
+
+.description-text {
+  width: 355px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  line-height: 18px;
+  color: var(--basic-gray-lighten);
+  position: relative;
+  bottom: 5px;
+  overflow-y: auto;
+  min-height: 20px;
+  max-height: 420px;
 }
 
 .browser {
   display: block;
   width: 360px;
   height: 45px;
+  background-image: url("../img/ufborder.svg");
+  background-repeat: no-repeat;
 }
 
-.browser img {
+.browser {
   position: relative;
   margin-bottom: 0;
   opacity: 1;
+  top: 5px;
 }
 
 .catalog-item-current {
@@ -942,12 +966,12 @@ filter-input:focus + label::before {
   border-radius: 5px;
 }
 
-.catalog-item-current:hover .browser img,
-.catalog-item-second:hover .browser img,
-.catalog-item-third:hover .browser img,
-.catalog-item-fourth:hover .browser img,
-.catalog-item-fifth:hover .browser img,
-.catalog-item-sixth:hover .browser img {
+.catalog-item-current:hover .browser,
+.catalog-item-second:hover .browser,
+.catalog-item-third:hover .browser,
+.catalog-item-fourth:hover .browser,
+.catalog-item-fifth:hover .browser,
+.catalog-item-sixth:hover .browser {
   opacity: 0.12;
 }
 
@@ -959,7 +983,7 @@ filter-input:focus + label::before {
 .catalog-item-current:hover .description {
   display: block;
   position: absolute;
-  bottom: 15px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -990,7 +1014,7 @@ filter-input:focus + label::before {
 .page-hover-second {
   display: none;
   position: absolute;
-  bottom: -70px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -1022,7 +1046,7 @@ filter-input:focus + label::before {
 .page-hover-third {
   display: none;
   position: absolute;
-  bottom: -70px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -1053,7 +1077,7 @@ filter-input:focus + label::before {
 .page-hover-fourth {
   display: none;
   position: absolute;
-  bottom: -70px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -1084,7 +1108,7 @@ filter-input:focus + label::before {
 .page-hover-fifth {
   display: none;
   position: absolute;
-  bottom: -70px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -1115,7 +1139,7 @@ filter-input:focus + label::before {
 .page-hover-sixth {
   display: none;
   position: absolute;
-  bottom: -70px;
+  bottom: -46px;
   right: 0;
   left: 0;
   background-color: var(--basic-gray);
@@ -1126,17 +1150,6 @@ filter-input:focus + label::before {
 
 .catalog-item-sixth:hover .page-hover-sixth {
   display: block;
-}
-
-.description-text {
-  width: 355px;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  line-height: 18px;
-  color: var(--basic-gray-lighten);
-  position: relative;
-  bottom: 5px;
 }
 
 .price-button {
@@ -1150,6 +1163,7 @@ filter-input:focus + label::before {
   list-style: none;
   outline: none;
   border-radius: 3px;
+  margin-bottom: 44px;
 }
 
 .price-button:hover {
@@ -1292,7 +1306,6 @@ filter-input:focus + label::before {
   margin-bottom: 0;
   position: relative;
   right: 40px;
-
 }
 
 /*********** PARTNERS ***********/
