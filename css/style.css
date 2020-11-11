@@ -222,10 +222,15 @@ body {
   padding-left: 243px;
 }
 
-.login-basket img {
+.contact::before {
+  content: "";
   position: absolute;
-  right: 470px;
   margin-top: 7px;
+  margin-left: 333px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
 }
 
 .user-navigation .login-basket {
@@ -919,7 +924,7 @@ filter-input:focus + label::before {
 .description-text {
   width: 355px;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 19px;
   text-align: center;
   line-height: 18px;
   color: var(--basic-gray-lighten);
@@ -978,7 +983,7 @@ filter-input:focus + label::before {
 .catalog-item-fourth:hover .browser,
 .catalog-item-fifth:hover .browser,
 .catalog-item-sixth:hover .browser {
-  opacity: 0.13;
+  background-image: url("../img/utborder.svg");
 }
 
 .hover-card img {
