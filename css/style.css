@@ -119,6 +119,7 @@ body {
   margin: 0 auto;
 }
 
+/*********** MAIN-NAVIGATION ***********/
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -185,7 +186,7 @@ body {
   color: var(--basic-black);
   margin-top: 75px;
   margin-bottom: 33px;
-  margin-left: 348px;
+  margin-left: 347px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -210,13 +211,19 @@ body {
   color: var(--basic-red);
 }
 
-.site-navigation img {
-  position: relative;
-  left: 200px;
+.navigation-redline img {
+  position: absolute;
+  margin-top: 43px;
+}
+
+.contact img {
+  position: absolute;
+  margin-top: 8px;
+  padding-left: 247px;
 }
 
 .login-basket {
-  padding-left: 225px;
+  padding-left: 240px;
 }
 
 .user-navigation .login-basket {
@@ -463,13 +470,20 @@ body {
   right: 4px;
 }
 
-/*********** FILTER-SORT ***********/
-.filter {
-
-}
-
+/*********** FILTER ***********/
 .filter-category .features {
   display: block;
+}
+
+.filter-radio {
+  list-style: none;
+  line-height: 19px;
+  font-size: 16px;
+  weight: 400;
+  font-weight: normal;
+  color: var(--basic-dark);
+  padding-left: 35px;
+  outline: none;
 }
 
 .filter-grid {
@@ -560,7 +574,7 @@ body {
   outline: none;
   padding-top: 3px;
   position: relative;
-  margin-top: 31px;
+  margin-top: 29px;
 }
 
 .filter-button:hover {
@@ -625,6 +639,23 @@ body {
   opacity: 0.4;
 }
 
+.filter-checkbox {
+  list-style: none;
+  line-height: 19px;
+  font-size: 16px;
+  weight: 400;
+  font-weight: normal;
+  color: var(--basic-dark);
+}
+
+.filter-grid-Sort {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  list-style: none;
+  weight: 700;
+}
+
 /*********** RADIO ***********/
 .filter-features-radio input[type='radio'] + .radio-indicator {
   content: "";
@@ -674,7 +705,7 @@ filter-input:focus + label::before {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-/* Filter scale */
+/*********** FILTER SCALE ***********/
 
 .filter-item {
   margin: 0;
@@ -696,7 +727,7 @@ filter-input:focus + label::before {
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
-  bottom: 2px;
+  margin-bottom: 6px;
 }
 
 .range-controls {
@@ -777,6 +808,66 @@ filter-input:focus + label::before {
 .grid a:hover,
 .grid a:focus {
   text-decoration: underline;
+}
+
+/*********** ARROWS DOWN&UP ***********/
+.arrows-container-second {
+  display: flex;
+  width: 40px;
+  height: 10px;
+  justify-content: space-between;
+  margin-left: 789px;
+  opacity: 0.2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 413px;
+}
+
+.arrows-container-second:hover,
+.arrows-container-second:focus {
+  opacity: 0.4;
+}
+
+.arrows-container-second:active {
+  opacity: 1;
+}
+
+.arrows-container {
+  display: flex;
+  width: 40px;
+  height: 10px;
+  justify-content: space-between;
+  margin-left: 759px;
+  opacity: 0.2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 413px;
+}
+
+.arrows-container:hover,
+.arrows-container:focus {
+  opacity: 0.4;
+}
+
+.arrows-container:active {
+  opacity: 1;
+}
+
+.arrow-up {
+  border: none;
+  outline: none;
+  background-color: var(--basic-white);
+}
+
+.arrow-down {
+  opacity: 1;
+  border: none;
+  outline: none;
+  background-color: var(--basic-white);
 }
 
 /************ CATALOG-LIST  ***************/
@@ -1069,122 +1160,7 @@ filter-input:focus + label::before {
   background-color: var(--basic-red-darken);
 }
 
-/* pagination */
-.pagination-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
-  margin-bottom: 49px;
-  margin-top: 85px;
-}
-
-.pagination-item {
-  margin-top: 17px;
-  margin-bottom: 9px;
-  margin-right: 9px;
-  position: relative;
-  left: 38px;
-  font-weight: 700;
-}
-
-.pagination-button {
-  width: 260px;
-  height: 50px;
-  text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.pagination-item:last-child {
-  margin-right: 0;
-}
-
-.pagination-item a {
-  display: block;
-  height: 25px;
-  width: 10px;
-  padding: 10px 19px;
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
-  border: px solid var(--basic-gray);
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 14px;
-  margin-right: 5px;
-}
-
-.pagination-item-first a {
-  display: block;
-  width: 220px;
-  padding: 10px 19px;
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
-  border: px solid var(--basic-gray);
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 13px;
-  margin-left: 35px;
-  margin-top: 18px;
-}
-
-.pagination-item a:hover {
-  background-color: var(--basic-submit-gray);
-}
-
-.pagination-item a:active {
-  display: block;
-  background-color: var(--basic-submit-gray-darken);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-item-1 a:hover {
-  background-color: var(--basic-submit-gray);
-}
-
-.pagination-item-1 a:active {
-  display: block;
-  background-color: var(--basic-submit-gray-darken);
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  border: 3px solid var(--basic-gray-pagination);
-  box-sizing: border-box;
-  width: 50px;
-  height: 50px;
-  border-radius: 3px;
-  padding-top: 10px;
-}
-
-/* filter */
-.filter legend {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.filter-radio {
-  list-style: none;
-  line-height: 19px;
-  font-size: 16px;
-  weight: 400;
-  font-weight: normal;
-  color: var(--basic-dark);
-  padding-left: 35px;
-  outline: none;
-}
-
+/*********** FILTER-SORT-LIST ***********/
 .breadcrumbs {
   padding: 0;
   margin: 0;
@@ -1192,14 +1168,6 @@ filter-input:focus + label::before {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
-}
-
-.breadcrumbs-price {
-  position: relative;
-  margin-right: 285px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 48px;
 }
 
 .breadcrumbs-sort {
@@ -1251,61 +1219,7 @@ filter-input:focus + label::before {
   opacity: 1;
 }
 
-/*********** ARROWS DOWN&UP ***********/
-.arrows-container {
-  display: flex;
-  width: 40px;
-  height: 10px;
-  justify-content: space-between;
-  margin-left: 759px;
-  opacity: 0.2;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 413px;
-}
-
-.arrows-container:hover,
-.arrows-container:focus {
-  opacity: 0.4;
-}
-
-.arrows-container:active {
-  opacity: 1;
-}
-
-.arrow-up {
-  border: none;
-  outline: none;
-  background-color: var(--basic-white);
-}
-
-.arrow-down {
-  opacity: 1;
-  border: none;
-  outline: none;
-  background-color: var(--basic-white);
-}
-
-/*********** FILTER-CHECKBOX ***********/
-.filter-checkbox {
-  list-style: none;
-  line-height: 19px;
-  font-size: 16px;
-  weight: 400;
-  font-weight: normal;
-  color: var(--basic-dark);
-}
-
-.filter-grid-Sort {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  list-style: none;
-  weight: 700;
-}
-
+/*********** SKILLS BLOCK ***********/
 .skills p {
   margin-top: 37px;
   text-align: none;
@@ -1320,6 +1234,11 @@ filter-input:focus + label::before {
 .skills {
   text-align: none;
   margin-right: -10px;
+}
+
+.skills-one {
+  position: relative;
+  right: 8px;
 }
 
 .skills li {
@@ -1371,9 +1290,12 @@ filter-input:focus + label::before {
   font-size: 16px;
   padding-top: 11px;
   margin-bottom: 0;
+  position: relative;
+  right: 40px;
+
 }
 
-/* partners */
+/*********** PARTNERS ***********/
 .partners {
   width: 1158px;
   border-top: 2px solid var(--basic-gray);
@@ -1467,6 +1389,7 @@ filter-input:focus + label::before {
   padding-right: 24px;;
 }
 
+/*********** BUTTON  ***********/
 .button-one {
   display: block;
   text-align: center;
@@ -1648,58 +1571,7 @@ filter-input:focus + label::before {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-/* MAP-CATALOG */
-.map-catalog {
-  min-width: 1440px;
-  height: 416px;
-  margin-top: 100px;
-  margin-bottom: 26px;
-  margin: 0 auto;
-  margin-bottom: 45px;
-  position: relative;
-}
-
-.map-catalog iframe {
-  border: none;
-}
-
-.marker-catalog {
-  position: relative;
-  bottom: 140px;
-  margin-left: 802px;
-}
-
-.footer-contacts-catalog {
-  padding-top: 31px;
-  position: absolute;
-  bottom: 54px;
-  display: block;
-  margin: 0;
-  width: 269px;
-  height: 277px;
-  background-color: var(--basic-white);
-  text-align: left;
-  line-height: 18px;
-  padding-left: 50px;
-}
-
-.footer-contacts-catalog p {
-  color: var(--basic-gray-lighten);
-  line-height: 18px;
-  margin-right: 30px;
-  padding-top: 5px;
-}
-
-.footer-contacts-catalog h3 {
-  display: block;
-  height: 30px;
-  font-size: 18px;
-  line-height: 30px;
-  color: var(--basic-black);
-  margin-right: 26px;
-}
-
-/* MAP-MAIN */
+/*********** MAP-MAIN  ***********/
 .map {
   min-width: 1440px;
   width: 100%;
@@ -1763,7 +1635,155 @@ filter-input:focus + label::before {
   color: var(--basic-gray-lighten);
 }
 
-/* SOCIAL */
+/*********** MAP-CATALOG  ***********/
+.map-catalog {
+  min-width: 1440px;
+  height: 416px;
+  margin-top: 100px;
+  margin-bottom: 26px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.map-catalog iframe {
+  border: none;
+}
+
+.marker-catalog {
+  position: relative;
+  bottom: 140px;
+  margin-left: 802px;
+}
+
+.footer-contacts-catalog {
+  padding-top: 31px;
+  position: absolute;
+  bottom: 54px;
+  display: block;
+  margin: 0;
+  width: 269px;
+  height: 277px;
+  background-color: var(--basic-white);
+  text-align: left;
+  line-height: 18px;
+  padding-left: 50px;
+}
+
+.footer-contacts-catalog p {
+  color: var(--basic-gray-lighten);
+  line-height: 18px;
+  margin-right: 30px;
+  padding-top: 5px;
+}
+
+.footer-contacts-catalog h3 {
+  display: block;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  margin-right: 26px;
+}
+
+/*********** PAGINATION  ***********/
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 49px;
+  margin-top: 85px;
+}
+
+.pagination-item {
+  margin-top: 17px;
+  margin-bottom: 9px;
+  margin-right: 9px;
+  position: relative;
+  left: 38px;
+  font-weight: 700;
+}
+
+.pagination-button {
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  height: 25px;
+  width: 10px;
+  padding: 10px 19px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+  border: px solid var(--basic-gray);
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 14px;
+  margin-right: 5px;
+}
+
+.pagination-item-first a {
+  display: block;
+  width: 220px;
+  padding: 10px 19px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+  border: px solid var(--basic-gray);
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 13px;
+  margin-left: 35px;
+  margin-top: 18px;
+}
+
+.pagination-item a:hover {
+  background-color: var(--basic-submit-gray);
+}
+
+.pagination-item a:active {
+  display: block;
+  background-color: var(--basic-submit-gray-darken);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-item-1 a:hover {
+  background-color: var(--basic-submit-gray);
+}
+
+.pagination-item-1 a:active {
+  display: block;
+  background-color: var(--basic-submit-gray-darken);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-gray-pagination);
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  padding-top: 10px;
+}
+
+/*********** SOCIAL BLOCK ***********/
 .vk img {
   position: relative;
   top: 30px;
@@ -1852,7 +1872,7 @@ filter-input:focus + label::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* MODAL */
+/*********** MODAL WINDOW  ***********/
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-white);

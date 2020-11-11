@@ -19,9 +19,8 @@
      <ul class="site-navigation">
   <li><a href="blank.html">Студия</a></li>
     <li><a href="blank.html">Клиенты</a></li>
-    <li><a href="catalog.html">Магазин</a></li>
-    <li><a href="blank.html">Контакты</a></li>
-      <img src="img/basket.svg" alt="decoration-redline"></li>
+    <li class="navigation-redline"><img src="img/nav-redline.svg" alt="decoration-redline" width="74" height="2"><a href="catalog.html">Магазин</a></li>
+    <li class="contact"><a href="blank.html">Контакты</a><img src="img/basket.svg" alt="decoration-basket" width="15" height="15"></li>
     <li class="login-basket"><a href="#">Корзина</a></li>
   </ul>
 </div>
@@ -36,7 +35,6 @@
         <main>
           <div class="page-catalog">
   <section class="filters">
-    <div class="breadcrumbs">
     <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
       <fieldset class="filter-item">
           <legend>Стоимость:</legend>
@@ -58,7 +56,6 @@
             </div>
           </div>
           </fieldset>
-    </div>
     <fieldset class="filter-grid">
       <legend>Сетка:</legend>
         <div class="filter-radio">
@@ -109,8 +106,8 @@
               </label>
             </div>
                   </fieldset>
-                      <button type="submit" class="filter-button">Показать</button>
-                        </form>
+                  <button type="submit" class="filter-button">Показать</button>
+              </form>
         </section>
         <section>
           <ul class="sort-list">
@@ -120,14 +117,16 @@
             <li class="sort-prices"><a class="sort-price" href="#">По&nbsp;названию</a>
             </ul>
             <div class="arrows-container">
-    <a class="arrows-item arrow-down"> <img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"></a>
-    <a class="arrows-item arrow-up"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"></a>
+    <a class="arrows-item arrow-down" href="#"><img src="img/icon-down.svg" width="11" height="10" alt="Стрелка вниз"></a>
+</div>
+<div class="arrows-container-second">
+    <a class="arrows-item arrow-up" href="#"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка вверх"></a>
 </div>
           <ul class="catalog-list">
   <li class="catalog-item-current">
   <div>
     <div class="browser">
-        <img src="img/ufborder.svg" width="360" height="50">
+        <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
   </div>
   <div class="hover-card">
   <img src="img/sedona.jpg" width="360" height="578" alt="Сайт для туристов">
@@ -142,7 +141,7 @@
   <li class="catalog-item-second">
       <div>
         <div class="browser">
-            <img src="img/ufborder.svg" width="360" height="50">
+            <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
     </div>
     <div class="hover-card">
         <img class="shadow" src="img/pink.jpg" width="360" height="578" alt="Приложения для IOS и Android">
@@ -157,7 +156,7 @@
   <li class="catalog-item-third">
     <div>
       <div class="browser">
-          <img src="img/ufborder.svg" width="360" height="50">
+          <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
     </div>
     <div class="hover-card">
   <img src="img/barbershop.jpg" width="360" height="578" alt="Салон красоты для мужчин">
@@ -172,7 +171,7 @@
 <li class="catalog-item-fourth">
   <div>
     <div class="browser">
-        <img src="img/ufborder.svg" width="360" height="50">
+        <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
                 </div>
                 <div class="hover-card">
   <img src="img/mishka.jpg" width="360" height="578" alt="Магазин вязаных игрушек">
@@ -187,7 +186,7 @@
   <li class="catalog-item-fifth">
     <div>
       <div class="browser">
-        <img src="img/ufborder.svg" width="360" height="50">
+        <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
               </div>
               <div class="hover-card">
       <img src="img/aplus.jpg" width="360" height="578" alt="Школа Aplus">
@@ -202,7 +201,7 @@
 <li class="catalog-item-sixth">
   <div>
     <div class="browser">
-      <img src="img/ufborder.svg" width="360" height="50">
+      <img src="img/ufborder.svg" width="360" height="50" alt="decoration-border">
             </div>
               <div class="hover-card">
   <img src="img/kvast.jpg" width="360" height="578" alt="Производитель крафтового кваса">
@@ -226,7 +225,6 @@
 </main>
 <footer class="page-footer main-footer">
   <section class="map-catalog">
-     <div class="map-catalog">
        <h2 class="visually-hidden">Карта</h2>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" style="width:100%;height:416px" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
  <div class="center">
@@ -236,9 +234,8 @@
      <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
    <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
  <a class="login-link" href="login.html">Напишите нам</a>
- </div>
          </section>
-  </div>
+         </div>
   </section>
  <div class="center">
  <section class="footer-social">
