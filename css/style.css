@@ -103,8 +103,6 @@ body {
 }
 
 .center h1 {
-  position: relative;
-  top: 40px;
   width: 538px;
   height: 111px;
   font-size: 55px;
@@ -147,7 +145,7 @@ body {
   width: 100%;
   justify-content: center;
   align-self: center;
-  margin-bottom: 108px;
+  margin-bottom: 79px;
   background-color: var(--basic-gray);
 }
 
@@ -233,13 +231,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.user-navigation .login-basket {
-  height: 30px;
-  padding-left: 50px;
-  position: relative;
-  text-align: right;
-}
-
 .site-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
@@ -315,8 +306,8 @@ body {
 }
 
 .slider-image {
-  position: relative;
-  right: 3px;
+  margin-left: -3px;
+  margin-top: -1px;
 }
 
 .slide {
@@ -389,8 +380,7 @@ body {
   width: 260px;
   height: 49px;
   color: var(--basic-dark);
-  position: relative;
-  bottom: 8px;
+  margin-bottom: 31px;
 }
 
 .features-item {
@@ -400,15 +390,11 @@ body {
   margin-right: 50px;
 }
 
-.features-item {
-  position: relative;
-  bottom: 29px;
-}
-
 .features-item h3 {
   font-size: 24px;
   line-height: 30px;
   margin-top: 18px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -418,7 +404,7 @@ body {
   grid-template-columns: 651px 379px;
   -moz-column-gap: 149px;
   column-gap: 149px;
-  margin-top: 8px;
+  margin-top: 30px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: center, 0 0;
@@ -439,11 +425,9 @@ body {
   height: 49px;
   list-style: none;
   color: var(--basic-dark);
-  margin-bottom: px;
-  margin-top: 38px;
+  margin-top: 34px;
   display: block;
-  position: relative;
-  bottom: 4px;
+  margin-bottom: 39px;
 }
 
 .index-columns h3 {
@@ -453,8 +437,6 @@ body {
   margin-bottom: 32px;
   width: 651px;
   margin-top: 73px;
-  position: relative;
-  top: 1px;
 }
 
 /*********** INFO ***********/
@@ -465,9 +447,9 @@ body {
   list-style: none;
   color: var(--basic-dark);
   margin-bottom: 22px;
-  position: relative;
-  right: 36px;
+  padding-right: 0;
   padding-top: 2px;
+  margin-left: -40px;
 }
 
 .info h4 {
@@ -480,12 +462,10 @@ body {
 }
 
 .info-list img {
-  position: relative;
-  margin-right: 7px;
-  bottom: 4px;
+  margin-right: 11px;
+  margin-bottom: 4px;
   height: 2px;
   width: 25px;
-  right: 4px;
 }
 
 /*********** FILTER ***********/
@@ -506,11 +486,6 @@ body {
 
 .filter-grid {
   margin-bottom: 5px;
-}
-
-.filter-checkbox {
-  position: relative;
-  right: 5px;
 }
 
 .filter-grid label {
@@ -539,13 +514,11 @@ body {
 
 .filter fieldset:first-child {
   margin-bottom: 23px;
-  position: relative;
 }
 
 .filter-grid legend {
   font-size: 18px;
   line-height: 30px;
-  position: relative;
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: 700;
@@ -557,7 +530,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  position: relative;
   padding-top: 25px;
 }
 
@@ -591,7 +563,6 @@ body {
   font-weight: bold;
   outline: none;
   padding-top: 3px;
-  position: relative;
   margin-top: 29px;
 }
 
@@ -606,7 +577,6 @@ body {
 }
 
 .filter-option label {
-  position: relative;
   display: inline-block;
   cursor: pointer;
   -webkit-user-select: none;
@@ -643,8 +613,7 @@ body {
 }
 
 .filter-checkbox {
-  position: relative;
-  left: 1px;
+  margin-left: 1px;
 }
 
 .filter-checkbox label {
@@ -702,10 +671,10 @@ body {
 }
 
 .filter-radio {
-  position: relative;
   right: 35px;
   bottom: 1px;
   margin-top: 11px;
+  margin-left: -35px;
 }
 
 .filter-radio label {
@@ -744,7 +713,6 @@ filter-input:focus + label::before {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  position: relative;
   margin-bottom: 6px;
 }
 
@@ -918,7 +886,7 @@ filter-input:focus + label::before {
   margin-bottom: 0;
   order: 0;
   list-style: none;
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 .description-text {
@@ -927,8 +895,6 @@ filter-input:focus + label::before {
   line-height: 19px;
   text-align: center;
   color: var(--basic-gray-lighten);
-  position: relative;
-  bottom: 5px;
   overflow-y: auto;
   min-height: 20px;
   max-height: 420px;
@@ -943,15 +909,12 @@ filter-input:focus + label::before {
 }
 
 .browser {
-  position: relative;
-  margin-bottom: 0;
+  margin-bottom: -5px;
   opacity: 1;
-  top: 5px;
 }
 
 .catalog-item-current {
   display: block;
-  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -963,7 +926,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .catalog-item-current:hover .hover-card img,
@@ -1008,7 +970,6 @@ filter-input:focus + label::before {
 
 .catalog-item-second {
   display: block;
-  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1018,7 +979,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .page-hover-second {
@@ -1039,7 +999,6 @@ filter-input:focus + label::before {
 
 .catalog-item-third {
   display: block;
-  position: relative;
   width: 360px;
   height: 578px;
   min-height: 240px;
@@ -1050,7 +1009,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .page-hover-third {
@@ -1071,7 +1029,6 @@ filter-input:focus + label::before {
 
 .catalog-item-fourth {
   display: block;
-  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1081,7 +1038,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .page-hover-fourth {
@@ -1102,7 +1058,6 @@ filter-input:focus + label::before {
 
 .catalog-item-fifth {
   display: block;
-  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1112,7 +1067,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .page-hover-fifth {
@@ -1133,7 +1087,6 @@ filter-input:focus + label::before {
 
 .catalog-item-sixth {
   display: block;
-  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1143,7 +1096,6 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
-  position: relative;
 }
 
 .page-hover-sixth {
@@ -1195,11 +1147,11 @@ filter-input:focus + label::before {
 }
 
 .breadcrumbs-sort {
-  position: relative;
+  margin-left: -265px;
+  margin-right: 265px;
   line-height: 30px;
   font-size: 18px;
-  right: 265px;
-  bottom: 3px;
+  margin-top: -3px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -1213,8 +1165,7 @@ filter-input:focus + label::before {
   display: flex;
   flex-wrap: nowrap;
   margin-left: 265px;
-  position: relative;
-  bottom: 16px;
+  margin-top: -1px;
 }
 
 .sort-price {
@@ -1245,7 +1196,6 @@ filter-input:focus + label::before {
 
 /*********** SKILLS BLOCK ***********/
 .skills p {
-  margin-top: 37px;
   text-align: none;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1261,8 +1211,7 @@ filter-input:focus + label::before {
 }
 
 .skills-one {
-  position: relative;
-  right: 8px;
+  margin-left: -9px;
 }
 
 .skills li {
@@ -1278,12 +1227,11 @@ filter-input:focus + label::before {
   flex-wrap: nowrap;
   position: relative;
   bottom: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 29px;
 }
 
 .skills img {
-  position: relative;
-  right: 40px;
+  margin-left: -40px;
   margin-top: 23px;
 }
 
@@ -1304,112 +1252,74 @@ filter-input:focus + label::before {
 
 .skills .old {
   color: var(--basic-black);
-  margin-top: 34px;
-  position: relative;
-  right: 142px;
+  margin-top: 30px;
+  margin-left: -142px;
+  margin-bottom: 18px;
 }
 
 .skills-description {
   line-height: 19px;
   font-size: 16px;
   padding-top: 11px;
-  margin-bottom: 0;
-  position: relative;
-  right: 40px;
+  margin-left: -1px;
+  padding-right: 42px;
 }
 
 /*********** PARTNERS ***********/
 .partners {
-  width: 1158px;
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
-  position: relative;
-  margin: 0;
-  margin-top: 11px;
-  margin-bottom: 80px;
-  padding-bottom: 36px;
-  right: 17px;
+  padding-bottom: 35px;
+  padding-top: 49px;
+  margin-bottom: 79px;
 }
 
 .partners-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  position: relative;
-  margin-top: 50px;
 }
 
-.partners-item {
-  position: relative;
-  margin: 0 auto;
-}
-
-.partners-item a {
+.partners-link {
+  align-self: center;
   opacity: 0.2;
 }
 
-.partners-item a:hover,
-.partners-item a:focus {
+.partners-link:hover,
+.partners-link:focus {
   opacity: 1;
 }
 
-.partners-item a:active {
+.partners-link:active {
   opacity: 0.1;
 }
 
-.partners-item::after {
+.partners-list-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 260px;
+  padding-right: 40px;
+}
+
+.partners-list-item::after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -45px;
+  top: 15%;
+  right: 19px;
   width: 2px;
   height: 52px;
-  margin: auto;
   background-color: var(--basic-gray);
-  bottom: 10px;
 }
 
-.partners-item:first-child::after {
-  display: none;
+.partners-list-item:nth-child(4n) {
+  padding-right: 0;
 }
 
-.academy {
-  position: relative;
-  top: 4px;
-  left: 10px;
-  padding-left: 10px;
-  padding-right: 35px;
-  margin-right: 50px;
-}
-
-.barbershop {
-  position: relative;
-  right: 8px;
-  bottom: 3px;
-  padding-left: 2px;
-  padding-right: 24px;
-  margin-right: 46px;
-}
-
-.pink {
-  position: relative;
-  right: 17px;
-  bottom: 3px;
-  padding-left: 15px;
-  padding-right: 1px;
-}
-
-.mishka {
-  position: relative;
-  left: 27px;
-  top: 1px;
-  padding-left: 20px;
-  padding-right: 24px;;
+.partners-list-item:nth-child(4n)::after {
+  content: none;
 }
 
 /*********** BUTTON  ***********/
@@ -1606,8 +1516,8 @@ filter-input:focus + label::before {
 }
 
 .marker {
-  position: relative;
-  bottom: 337px;
+  position: absolute;
+  bottom: 140px;
   margin-left: 682px;
 }
 
@@ -1674,7 +1584,7 @@ filter-input:focus + label::before {
 }
 
 .marker-catalog {
-  position: relative;
+  position: absolute;
   bottom: 140px;
   margin-left: 802px;
 }
@@ -1717,8 +1627,8 @@ filter-input:focus + label::before {
   margin: 0;
   list-style: none;
   width: 100%;
-  margin-bottom: 49px;
-  margin-top: 85px;
+  margin-bottom: 51px;
+  margin-top: 80px;
 }
 
 .pagination-item {
