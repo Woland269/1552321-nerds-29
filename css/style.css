@@ -1782,11 +1782,11 @@ filter-input:focus + label::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-item-1 a:hover {
+.pagination-item-first a:hover {
   background-color: var(--basic-submit-gray);
 }
 
-.pagination-item-1 a:active {
+.pagination-item-first a:active {
   display: block;
   background-color: var(--basic-submit-gray-darken);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -2076,6 +2076,12 @@ filter-input:focus + label::before {
   margin-top: 28px;
   position: relative;
   left: 20px;
+}
+
+.login-form textarea {
+  margin: 0;
+  height: 94px;
+  width: 730px;
 }
 
 .login-form input:hover {
