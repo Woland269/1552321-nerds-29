@@ -915,6 +915,7 @@ filter-input:focus + label::before {
 
 .catalog-item-current {
   display: block;
+  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -926,6 +927,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .catalog-item-current:hover .hover-card img,
@@ -949,7 +951,6 @@ filter-input:focus + label::before {
 
 .hover-card img {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
 .catalog-item-current:hover .description {
@@ -970,6 +971,7 @@ filter-input:focus + label::before {
 
 .catalog-item-second {
   display: block;
+  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -979,6 +981,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .page-hover-second {
@@ -999,6 +1002,7 @@ filter-input:focus + label::before {
 
 .catalog-item-third {
   display: block;
+  position: relative;
   width: 360px;
   height: 578px;
   min-height: 240px;
@@ -1009,6 +1013,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .page-hover-third {
@@ -1029,6 +1034,7 @@ filter-input:focus + label::before {
 
 .catalog-item-fourth {
   display: block;
+  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1038,6 +1044,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .page-hover-fourth {
@@ -1058,6 +1065,7 @@ filter-input:focus + label::before {
 
 .catalog-item-fifth {
   display: block;
+  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1067,6 +1075,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .page-hover-fifth {
@@ -1087,6 +1096,7 @@ filter-input:focus + label::before {
 
 .catalog-item-sixth {
   display: block;
+  position: relative;
   width: 358px;
   height: 578px;
   min-height: 240px;
@@ -1096,6 +1106,7 @@ filter-input:focus + label::before {
   display: block;
   height: 100%;
   width: auto;
+  position: relative;
 }
 
 .page-hover-sixth {
@@ -1826,7 +1837,7 @@ filter-input:focus + label::before {
 
 .modal-close {
   position: absolute;
-  top: 78px;
+  top: 80px;
   right: 90px;
   width: 22px;
   height: 22px;
@@ -1840,9 +1851,9 @@ filter-input:focus + label::before {
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
+  top: 6px;
+  right: 1px;
+  width: 29px;
   height: 3px;
   background-color: var(--special);
   opacity: 0.3;
@@ -1868,11 +1879,14 @@ filter-input:focus + label::before {
 
 .modal-login {
   display: none;
-  top: 183px;
+  top: 201px;
   bottom: auto;
   height: 580px;
   width: 843px;
-  padding: 5px 80px;
+  padding: 5px;
+  padding-left: 80px;
+  padding-right: 42px;
+  margin-left: 472px;
 }
 
 .modal-login h2 {
@@ -1922,7 +1936,6 @@ filter-input:focus + label::before {
 }
 
 .login-form input {
-  width: 360px;
   height: 50px;
   padding: 0 14px;
 }
@@ -1959,10 +1972,12 @@ filter-input:focus + label::before {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 2px solid var(--basic-gray);
+  border-radius: 5px;
   font-weight: 400;
   margin-top: 60px;
   position: relative;
   right: 60px;
+  width: 330px;
 }
 
 .login-form input[type="email"] {
@@ -1972,8 +1987,10 @@ filter-input:focus + label::before {
   border: 2px solid var(--basic-gray);
   font-weight: 400;
   margin-top: 60px;
+  border-radius: 5px;
   position: relative;
   right: 80px;
+  width: 330px;
 }
 
 .login-form textarea[class="text"] {
@@ -1982,9 +1999,8 @@ filter-input:focus + label::before {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-gray);
   font-weight: 400;
-  margin-top: 28px;
-  position: relative;
-  left: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
 
 .login-form textarea {
